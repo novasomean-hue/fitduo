@@ -578,9 +578,11 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   display: flex;
   align-items: center;
   transition: color 0.2s;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.btn-video:hover { color: var(--red); }
+.btn-video:hover { color: #fe2c55; }
 .btn-video svg { width: 18px; height: 18px; }
 
 /* ===== FINISHER NOTE ===== */
@@ -1029,111 +1031,6 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   color: var(--text-muted);
 }
 
-/* ===== VIDEO MODAL ===== */
-.video-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0,0,0,0.85);
-  backdrop-filter: blur(8px);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-}
-
-.video-modal.active {
-  opacity: 1;
-  visibility: visible;
-}
-
-.video-search-content {
-  width: 90%;
-  max-width: 340px;
-  background: var(--bg-raised);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-lg);
-  padding: 28px 24px;
-  text-align: center;
-  position: relative;
-  animation: scaleIn 0.3s ease;
-}
-
-.video-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  padding: 4px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 0.2s;
-}
-
-.video-close:hover { color: var(--text); }
-
-.video-search-title {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--accent);
-  margin-bottom: 4px;
-}
-
-.video-search-subtitle {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-bottom: 20px;
-}
-
-.video-search-links {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.video-link-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 14px 20px;
-  border-radius: var(--radius-sm);
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: all 0.2s;
-  letter-spacing: 0.5px;
-}
-
-.video-link-btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
-
-.tiktok-btn {
-  background: linear-gradient(135deg, #25f4ee, #fe2c55);
-  color: white;
-}
-
-.yt-shorts-btn {
-  background: linear-gradient(135deg, #ff0000, #cc0000);
-  color: white;
-}
-
-.yt-btn {
-  background: var(--surface);
-  border: 1px solid var(--glass-border);
-  color: var(--text);
-}
-
-.yt-btn:hover { background: var(--surface-hover); }
 
 @keyframes scaleIn {
   from { transform: scale(0.9); opacity: 0; }

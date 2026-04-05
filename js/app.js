@@ -363,8 +363,8 @@ function renderWorkout(container, data, profile) {
         var isChecked = checks[exerciseIdx];
         var checkedCls = isChecked ? ' checked' : '';
         var completedCls = isChecked ? ' completed' : '';
-        var safeName = ex.name.replace(/'/g, "\\'");
-        var videoBtn = '<button class="btn-video" onclick="FitDuo.openVideo(\'' + safeName + '\')" title="Watch form video">' + PLAY_SVG + '</button>';
+        var searchQuery = encodeURIComponent(ex.name + ' form tutorial');
+        var videoBtn = '<a class="btn-video" href="https://www.tiktok.com/search?q=' + searchQuery + '" target="_blank" title="Watch on TikTok">' + PLAY_SVG + '</a>';
 
         h += '<div class="exercise-row' + completedCls + '">';
         h += '<button class="exercise-check' + checkedCls + '" onclick="FitDuo.toggleCheck(this,\'' + profile + '\',\'' + dayData.id + '\',' + exerciseIdx + ',' + week + ')">' + CHECK_SVG + '</button>';
@@ -697,19 +697,6 @@ window.FitDuo = {
     document.getElementById('profileSelector').classList.remove('hidden');
   },
   navigate: navigate,
-  openVideo: function(exerciseName) {
-    var modal = document.getElementById('videoModal');
-    var query = encodeURIComponent(exerciseName + ' form tutorial');
-    document.getElementById('videoSearchTitle').textContent = exerciseName;
-    document.getElementById('ytSearchLink').href = 'https://www.youtube.com/results?search_query=' + query + '+short';
-    document.getElementById('tiktokSearchLink').href = 'https://www.tiktok.com/search?q=' + query;
-    document.getElementById('ytShortsLink').href = 'https://www.youtube.com/results?search_query=' + query + '+%23shorts&sp=EgIYAQ%253D%253D';
-    modal.classList.add('active');
-  },
-  closeVideo: function(event) {
-    if (event && event.target !== event.currentTarget && !event.target.classList.contains('video-close') && !event.target.closest('.video-close')) return;
-    document.getElementById('videoModal').classList.remove('active');
-  },
   toggleCheck: function(btn, profile, dayId, exIdx, week) {
     var key = 'checks-w' + week + '-' + dayId;
     var checks = Storage.getP(profile, key) || {};
