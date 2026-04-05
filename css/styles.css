@@ -1037,6 +1037,54 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   to { transform: scale(1); opacity: 1; }
 }
 
+/* ===== VIDEO MODAL ===== */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.88);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.video-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal-inner {
+  width: 92%;
+  max-width: 640px;
+  aspect-ratio: 16/9;
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  animation: scaleIn 0.3s ease;
+}
+
+.video-modal-inner iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-modal-close {
+  position: absolute;
+  top: -36px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  z-index: 10;
+}
+
 /* ===== REST TIMER ===== */
 .timer-fab {
   position: fixed;

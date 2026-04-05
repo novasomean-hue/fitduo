@@ -27,7 +27,7 @@ const NOVA_DATA = {
       id: "nova-day1", name: "Day 1 — Push", subtitle: "Chest / Shoulders / Triceps", tag: "Push", tagClass: "tag-push",
       sections: [
         { label: "Compound", exercises: [
-          { name: "Flat Barbell Bench Press", sets: "4 x 6-8", rest: "90s", videoId: "rT7DgCr-3pg" },
+          { name: "Flat Barbell Bench Press", sets: "4 x 6-8", rest: "90s", videoId: "4Y2ZdHCOXok" },
           { name: "Incline Dumbbell Press", sets: "3 x 8-10", rest: "75s", videoId: "8iPEnn-ltC8" }
         ]},
         { label: "Isolation", exercises: [
@@ -50,7 +50,7 @@ const NOVA_DATA = {
           { name: "Seated Cable Row (close grip)", sets: "3 x 10-12", rest: "60s", videoId: "GZbfZ033f74" },
           { name: "Face Pulls", sets: "3 x 15-20", rest: "45s", videoId: "rep-qVOkqgk" },
           { name: "Rear Delt Flyes", sets: "3 x 12-15", rest: "45s", videoId: "EA7u4Q_8HQ0" },
-          { name: "Barbell Curls", sets: "3 x 8-10", rest: "60s", videoId: "kwG2ipFRgFo" },
+          { name: "Barbell Curls", sets: "3 x 8-10", rest: "60s", videoId: "LY1V6UbRHFM" },
           { name: "Incline Dumbbell Curls", sets: "3 x 10-12", rest: "45s", videoId: "soxrZlIl35U" }
         ]}
       ]
@@ -101,7 +101,7 @@ const NOVA_DATA = {
         { label: "Core Circuit (3 rounds)", exercises: [
           { name: "Hanging Leg Raises", sets: "3 x 12-15", rest: "30s", videoId: "hdng3Nm1x_E" },
           { name: "Cable Woodchoppers", sets: "3 x 12/side", rest: "30s", videoId: "pAplQXk3dkU" },
-          { name: "Ab Wheel Rollouts", sets: "3 x 10-12", rest: "30s", videoId: "rqiTPiqDGG0" },
+          { name: "Ab Wheel Rollouts", sets: "3 x 10-12", rest: "30s", videoId: "M2rwvNhTOu0" },
           { name: "Dead Bug", sets: "3 x 10/side", rest: "30s", videoId: "4XLEnwUr1d8" }
         ]}
       ]
@@ -151,8 +151,8 @@ const CHARISMA_DATA = {
       id: "char-day1", name: "Day 1 — Glutes & Hamstrings", subtitle: "Heavy Day", tag: "Glutes", tagClass: "tag-glutes",
       sections: [
         { label: "Activation (do first!)", exercises: [
-          { name: "Banded Glute Bridge Hold", sets: "2 x 20s", rest: "—", videoId: "8bbE64NuDni" },
-          { name: "Banded Clamshells", sets: "2 x 15/side", rest: "—", videoId: "cEhJMCxDGXE" }
+          { name: "Banded Glute Bridge Hold", sets: "2 x 20s", rest: "—", videoId: "wYREQkVtvEc" },
+          { name: "Banded Clamshells", sets: "2 x 15/side", rest: "—" }
         ]},
         { label: "Main Lifts", exercises: [
           { name: "Barbell Hip Thrust", sets: "4 x 8-10", rest: "90s", videoId: "SEdqd1n0cvg" },
@@ -160,9 +160,9 @@ const CHARISMA_DATA = {
           { name: "Bulgarian Split Squat", sets: "3 x 10/leg", rest: "60s", videoId: "2C-uNgKwPLE" }
         ]},
         { label: "Isolation", exercises: [
-          { name: "Cable Kickbacks", sets: "3 x 12/leg", rest: "45s", videoId: "b_MHflCAliY" },
+          { name: "Cable Kickbacks", sets: "3 x 12/leg", rest: "45s", videoId: "oyGEVPuumtk" },
           { name: "Lying Leg Curl", sets: "3 x 12-15", rest: "45s", videoId: "1Tq3QdYUuHs" },
-          { name: "Seated Abductor Machine", sets: "3 x 15-20", rest: "45s", videoId: "ipJBfOBIFP8" }
+          { name: "Seated Abductor Machine", sets: "3 x 15-20", rest: "45s" }
         ]}
       ],
       finisher: "15 min incline treadmill walk (10-12% incline, 3.5 mph) — burns calories while activating glutes."
@@ -190,16 +190,16 @@ const CHARISMA_DATA = {
       id: "char-day3", name: "Day 3 — Glutes & Quads", subtitle: "Sculpt Day", tag: "Glutes", tagClass: "tag-glutes",
       sections: [
         { label: "Activation", exercises: [
-          { name: "Banded Monster Walks", sets: "2 x 20 steps", rest: "—", videoId: "jMaDhLQioW4" }
+          { name: "Banded Monster Walks", sets: "2 x 20 steps", rest: "—" }
         ]},
         { label: "Main Lifts", exercises: [
           { name: "Goblet Squat (deep)", sets: "4 x 10-12", rest: "75s", videoId: "MeIiIdhvXT4" },
-          { name: "Sumo Deadlift", sets: "3 x 10-12", rest: "75s", videoId: "aIlJsil0rME" },
+          { name: "Sumo Deadlift", sets: "3 x 10-12", rest: "75s" },
           { name: "Walking Lunges (DB)", sets: "3 x 12/leg", rest: "60s", videoId: "L8fvypPrzzs" }
         ]},
         { label: "Isolation", exercises: [
           { name: "Leg Press (feet high & wide)", sets: "3 x 12-15", rest: "60s", videoId: "IZxyjW7MPJQ" },
-          { name: "Cable Pull-Throughs", sets: "3 x 12-15", rest: "45s", videoId: "MBcVj-YnKUc" },
+          { name: "Cable Pull-Throughs", sets: "3 x 12-15", rest: "45s" },
           { name: "Leg Extensions (light)", sets: "3 x 15", rest: "45s", videoId: "YyvSfVjQeL0" }
         ]}
       ],
@@ -210,9 +210,9 @@ const CHARISMA_DATA = {
       sections: [
         { label: "HIIT Circuit (4 rounds, 40s work / 20s rest)", exercises: [
           { name: "Kettlebell Swings", sets: "40s on", rest: "20s off", videoId: "YSxHifyI6s8" },
-          { name: "Jump Squats or Box Step-Ups", sets: "40s on", rest: "20s off", videoId: "A-cFYGvaYpM" },
+          { name: "Jump Squats or Box Step-Ups", sets: "40s on", rest: "20s off", videoId: "CVaEhXotL7M" },
           { name: "Battle Ropes or Mountain Climbers", sets: "40s on", rest: "20s off", videoId: "nmwgirgXLYM" },
-          { name: "Dumbbell Thrusters", sets: "40s on", rest: "20s off", videoId: "M-DPHOMalkQ" },
+          { name: "Dumbbell Thrusters", sets: "40s on", rest: "20s off" },
           { name: "2 min rest between rounds", sets: "—", rest: "—" }
         ]},
         { label: "Core Circuit (3 rounds)", exercises: [
@@ -230,8 +230,8 @@ const CHARISMA_DATA = {
       sections: [
         { label: "Glute Focus", exercises: [
           { name: "Hip Thrust (single leg or banded)", sets: "3 x 12/leg", rest: "60s", videoId: "SEdqd1n0cvg" },
-          { name: "Smith Machine Reverse Lunge", sets: "3 x 10/leg", rest: "60s", videoId: "Z2nXR_mOPCE" },
-          { name: "Frog Pumps (banded)", sets: "2 x 25", rest: "45s", videoId: "94bBOKNcCbU" }
+          { name: "Smith Machine Reverse Lunge", sets: "3 x 10/leg", rest: "60s", videoId: "xrPteyQLGAo" },
+          { name: "Frog Pumps (banded)", sets: "2 x 25", rest: "45s", videoId: "yZmx_Ac3880" }
         ]},
         { label: "Upper Tone", exercises: [
           { name: "Push-Ups (or kneeling)", sets: "3 x AMRAP", rest: "60s", videoId: "IODxDxX7oi4" },
@@ -363,8 +363,13 @@ function renderWorkout(container, data, profile) {
         var isChecked = checks[exerciseIdx];
         var checkedCls = isChecked ? ' checked' : '';
         var completedCls = isChecked ? ' completed' : '';
-        var searchQuery = encodeURIComponent(ex.name + ' form tutorial');
-        var videoBtn = '<a class="btn-video" href="https://www.tiktok.com/search?q=' + searchQuery + '" target="_blank" title="Watch on TikTok">' + PLAY_SVG + '</a>';
+        var videoBtn;
+        if (ex.videoId) {
+          videoBtn = '<button class="btn-video" onclick="FitDuo.openVideo(\'' + ex.videoId + '\')" title="Watch form video">' + PLAY_SVG + '</button>';
+        } else {
+          var searchQuery = encodeURIComponent(ex.name + ' form tutorial');
+          videoBtn = '<a class="btn-video" href="https://www.tiktok.com/search?q=' + searchQuery + '" target="_blank" title="Search on TikTok">' + PLAY_SVG + '</a>';
+        }
 
         h += '<div class="exercise-row' + completedCls + '">';
         h += '<button class="exercise-check' + checkedCls + '" onclick="FitDuo.toggleCheck(this,\'' + profile + '\',\'' + dayData.id + '\',' + exerciseIdx + ',' + week + ')">' + CHECK_SVG + '</button>';
@@ -697,6 +702,16 @@ window.FitDuo = {
     document.getElementById('profileSelector').classList.remove('hidden');
   },
   navigate: navigate,
+  openVideo: function(videoId) {
+    var modal = document.getElementById('videoModal');
+    document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+    modal.classList.add('active');
+  },
+  closeVideo: function(event) {
+    if (event && event.target !== event.currentTarget) return;
+    document.getElementById('videoFrame').src = '';
+    document.getElementById('videoModal').classList.remove('active');
+  },
   toggleCheck: function(btn, profile, dayId, exIdx, week) {
     var key = 'checks-w' + week + '-' + dayId;
     var checks = Storage.getP(profile, key) || {};
