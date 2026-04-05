@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#08080c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>FitDuo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body data-profile="nova">
+
+  <!-- PROFILE SELECTOR -->
+  <div class="profile-selector" id="profileSelector">
+    <h1>FitDuo</h1>
+    <p>Choose your profile</p>
+    <div class="profile-cards">
+      <div class="profile-card nova" onclick="FitDuo.selectProfile('nova')">
+        <div class="avatar">N</div>
+        <div class="profile-name">Nova</div>
+        <div class="profile-plan">Lean Muscle Blueprint</div>
+      </div>
+      <div class="profile-card charisma" onclick="FitDuo.selectProfile('charisma')">
+        <div class="avatar">C</div>
+        <div class="profile-name">Charisma</div>
+        <div class="profile-plan">Sculpt & Burn</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <span class="top-bar-logo">FitDuo</span>
+      <div class="top-bar-profile">
+        <span class="profile-dot"></span>
+        <span id="topBarName">Nova</span>
+      </div>
+    </div>
+    <div class="top-bar-right">
+      <div class="streak-badge" id="streakBadge" title="Workout streak">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.5 8.5 3 12.5 3 16a9 9 0 0 0 18 0c0-3.5-3.5-7.5-9-14z"/></svg>
+        <span id="streakCount">0</span>
+      </div>
+      <button class="btn-switch-profile" onclick="FitDuo.showProfileSelector()">Switch</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="page active" id="page-workout"></div>
+    <div class="page" id="page-meals"></div>
+    <div class="page" id="page-calendar"></div>
+    <div class="page" id="page-progress"></div>
+    <div class="page" id="page-guide"></div>
+  </main>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-page="workout" onclick="FitDuo.navigate('workout')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5h11M6.5 17.5h11M2 12h4M18 12h4M6 12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM6 18a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM18 12a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1zM18 18a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h0a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1z"/></svg>
+      <span>Workout</span>
+    </button>
+    <button class="nav-item" data-page="meals" onclick="FitDuo.navigate('meals')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+      <span>Meals</span>
+    </button>
+    <button class="nav-item" data-page="calendar" onclick="FitDuo.navigate('calendar')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span>Calendar</span>
+    </button>
+    <button class="nav-item" data-page="progress" onclick="FitDuo.navigate('progress')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      <span>Progress</span>
+    </button>
+    <button class="nav-item" data-page="guide" onclick="FitDuo.navigate('guide')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span>Guide</span>
+    </button>
+  </nav>
+
+  <!-- REST TIMER FAB -->
+  <button class="timer-fab" id="timerFab" onclick="FitDuo.timerToggle()">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+  </button>
+
+  <!-- TIMER OVERLAY -->
+  <div class="timer-overlay" id="timerOverlay">
+    <button class="timer-close" onclick="FitDuo.timerToggle()">&times;</button>
+    <div class="timer-ring">
+      <svg viewBox="0 0 200 200">
+        <circle class="timer-ring-bg" cx="100" cy="100" r="90"/>
+        <circle class="timer-ring-progress" id="timerProgress" cx="100" cy="100" r="90" stroke-dasharray="565.48" stroke-dashoffset="0"/>
+      </svg>
+      <div class="timer-display" id="timerDisplay">0:00</div>
+    </div>
+    <div class="timer-presets" id="timerPresets">
+      <button class="timer-preset" data-seconds="30">0:30</button>
+      <button class="timer-preset" data-seconds="45">0:45</button>
+      <button class="timer-preset active" data-seconds="60">1:00</button>
+      <button class="timer-preset" data-seconds="75">1:15</button>
+      <button class="timer-preset" data-seconds="90">1:30</button>
+      <button class="timer-preset" data-seconds="120">2:00</button>
+    </div>
+    <div class="timer-controls">
+      <button class="timer-btn start" id="timerStartBtn" onclick="FitDuo.timerStartStop()">Start</button>
+      <button class="timer-btn" onclick="FitDuo.timerReset()">Reset</button>
+    </div>
+  </div>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal" onclick="FitDuo.closeVideo(event)">
+    <div class="video-modal-content">
+      <button class="video-close" onclick="FitDuo.closeVideo()">&times;</button>
+      <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
