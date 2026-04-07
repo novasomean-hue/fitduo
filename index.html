@@ -117,7 +117,7 @@
   <!-- VIDEO MODAL -->
   <div class="video-modal" id="videoModal" onclick="FitDuo.closeVideo(event)">
     <div class="video-modal-inner">
-      <button class="video-modal-close" onclick="document.getElementById('videoFrame').src='';document.getElementById('videoModal').classList.remove('active');">&times;</button>
+      <button class="video-modal-close" onclick="document.getElementById('videoFrame').src='';var m=document.getElementById('videoModal');m.classList.remove('active');m.classList.remove('tiktok');">&times;</button>
       <iframe id="videoFrame" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>

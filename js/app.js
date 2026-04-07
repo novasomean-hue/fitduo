@@ -27,15 +27,15 @@ const NOVA_DATA = {
       id: "nova-day1", name: "Day 1 — Push", subtitle: "Chest / Shoulders / Triceps", tag: "Push", tagClass: "tag-push",
       sections: [
         { label: "Compound", exercises: [
-          { name: "Flat Barbell Bench Press", sets: "4 x 6-8", rest: "90s", videoId: "4Y2ZdHCOXok" },
-          { name: "Incline Dumbbell Press", sets: "3 x 8-10", rest: "75s", videoId: "8iPEnn-ltC8" }
+          { name: "Flat Barbell Bench Press", sets: "4 x 6-8", rest: "90s", tiktok: "7563007414530788621" },
+          { name: "Incline Dumbbell Press", sets: "3 x 8-10", rest: "75s", tiktok: "7562909631308205334" }
         ]},
         { label: "Isolation", exercises: [
-          { name: "Cable Flyes (low to high)", sets: "3 x 12-15", rest: "60s", videoId: "Iwe6AmxVf7o" },
-          { name: "Seated DB Shoulder Press", sets: "3 x 8-10", rest: "75s", videoId: "qEwKCR5JCog" },
-          { name: "Lateral Raises", sets: "4 x 12-15", rest: "45s", videoId: "3VcKaXpzqRo" },
-          { name: "Overhead Tricep Extension (cable)", sets: "3 x 10-12", rest: "60s", videoId: "kiuVA0gs3EI" },
-          { name: "Tricep Pushdowns", sets: "3 x 12-15", rest: "45s", videoId: "2-LAMcpzODU" }
+          { name: "Cable Flyes (low to high)", sets: "3 x 12-15", rest: "60s", tiktok: "7210918781260958982" },
+          { name: "Seated DB Shoulder Press", sets: "3 x 8-10", rest: "75s", tiktok: "7221684084676857094" },
+          { name: "Lateral Raises", sets: "4 x 12-15", rest: "45s", tiktok: "7199444879951383813" },
+          { name: "Overhead Tricep Extension (cable)", sets: "3 x 10-12", rest: "60s", tiktok: "7592048552885374263" },
+          { name: "Tricep Pushdowns", sets: "3 x 12-15", rest: "45s", tiktok: "7518506584096476438" }
         ]}
       ]
     },
@@ -43,15 +43,15 @@ const NOVA_DATA = {
       id: "nova-day2", name: "Day 2 — Pull", subtitle: "Back / Biceps / Rear Delts", tag: "Pull", tagClass: "tag-pull",
       sections: [
         { label: "Compound", exercises: [
-          { name: "Barbell Rows", sets: "4 x 6-8", rest: "90s", videoId: "FWJR5Ve8bnQ" },
-          { name: "Weighted Pull-Ups (or Lat Pulldown)", sets: "4 x 8-10", rest: "75s", videoId: "eGo4IYlbE5g" }
+          { name: "Barbell Rows", sets: "4 x 6-8", rest: "90s", tiktok: "7492201739781737783" },
+          { name: "Weighted Pull-Ups (or Lat Pulldown)", sets: "4 x 8-10", rest: "75s", tiktok: "7523224646653611286" }
         ]},
         { label: "Isolation", exercises: [
-          { name: "Seated Cable Row (close grip)", sets: "3 x 10-12", rest: "60s", videoId: "GZbfZ033f74" },
-          { name: "Face Pulls", sets: "3 x 15-20", rest: "45s", videoId: "rep-qVOkqgk" },
-          { name: "Rear Delt Flyes", sets: "3 x 12-15", rest: "45s", videoId: "EA7u4Q_8HQ0" },
-          { name: "Barbell Curls", sets: "3 x 8-10", rest: "60s", videoId: "LY1V6UbRHFM" },
-          { name: "Incline Dumbbell Curls", sets: "3 x 10-12", rest: "45s", videoId: "soxrZlIl35U" }
+          { name: "Seated Cable Row (close grip)", sets: "3 x 10-12", rest: "60s", tiktok: "7198327695896366342" },
+          { name: "Face Pulls", sets: "3 x 15-20", rest: "45s", tiktok: "7590934687497882893" },
+          { name: "Rear Delt Flyes", sets: "3 x 12-15", rest: "45s", tiktok: "7484044504715005226" },
+          { name: "Barbell Curls", sets: "3 x 8-10", rest: "60s", tiktok: "7451754414399966470" },
+          { name: "Incline Dumbbell Curls", sets: "3 x 10-12", rest: "45s", tiktok: "7544903574887664909" }
         ]}
       ]
     },
@@ -59,15 +59,15 @@ const NOVA_DATA = {
       id: "nova-day3", name: "Day 3 — Legs", subtitle: "Quads / Hams / Glutes / Calves", tag: "Legs", tagClass: "tag-legs",
       sections: [
         { label: "Compound", exercises: [
-          { name: "Barbell Back Squat", sets: "4 x 6-8", rest: "120s", videoId: "ultWZbUMPL8" },
-          { name: "Romanian Deadlift", sets: "3 x 8-10", rest: "90s", videoId: "7j-2w4-P14I" }
+          { name: "Barbell Back Squat", sets: "4 x 6-8", rest: "120s", tiktok: "7531900991550049592" },
+          { name: "Romanian Deadlift", sets: "3 x 8-10", rest: "90s", tiktok: "7597000900833479944" }
         ]},
         { label: "Isolation", exercises: [
-          { name: "Leg Press", sets: "3 x 10-12", rest: "75s", videoId: "IZxyjW7MPJQ" },
-          { name: "Leg Curl (lying or seated)", sets: "3 x 10-12", rest: "60s", videoId: "1Tq3QdYUuHs" },
-          { name: "Leg Extensions", sets: "3 x 12-15", rest: "60s", videoId: "YyvSfVjQeL0" },
-          { name: "Walking Lunges", sets: "3 x 12/leg", rest: "60s", videoId: "L8fvypPrzzs" },
-          { name: "Standing Calf Raises", sets: "4 x 12-15", rest: "45s", videoId: "gwLzBJYoWlI" }
+          { name: "Leg Press", sets: "3 x 10-12", rest: "75s", tiktok: "7483257684112821547" },
+          { name: "Leg Curl (lying or seated)", sets: "3 x 10-12", rest: "60s", tiktok: "7481825062937693486" },
+          { name: "Leg Extensions", sets: "3 x 12-15", rest: "60s", tiktok: "7507771948806475014" },
+          { name: "Walking Lunges", sets: "3 x 12/leg", rest: "60s", tiktok: "7559734382701874488" },
+          { name: "Standing Calf Raises", sets: "4 x 12-15", rest: "45s", tiktok: "7594124508064140575" }
         ]}
       ]
     },
@@ -75,15 +75,15 @@ const NOVA_DATA = {
       id: "nova-day4", name: "Day 4 — Upper Power", subtitle: "Chest / Back / Shoulders", tag: "Upper", tagClass: "tag-upper",
       sections: [
         { label: "Compound", exercises: [
-          { name: "Incline Barbell Bench Press", sets: "4 x 6-8", rest: "90s", videoId: "SrqOu55lrYU" },
-          { name: "Weighted Chin-Ups", sets: "4 x 6-8", rest: "90s", videoId: "Hdc7Mw6BIEE" }
+          { name: "Incline Barbell Bench Press", sets: "4 x 6-8", rest: "90s", tiktok: "7202782470478073093" },
+          { name: "Weighted Chin-Ups", sets: "4 x 6-8", rest: "90s", tiktok: "7589005815084764438" }
         ]},
         { label: "Hypertrophy", exercises: [
-          { name: "Dumbbell Chest Flyes", sets: "3 x 10-12", rest: "60s", videoId: "eozdVDA78K0" },
-          { name: "T-Bar Row or Meadows Row", sets: "3 x 10-12", rest: "60s", videoId: "j3Igk5nyZE4" },
-          { name: "Arnold Press", sets: "3 x 10-12", rest: "60s", videoId: "6Z15_WdXmVw" },
-          { name: "Hammer Curls", sets: "3 x 10-12", rest: "45s", videoId: "zC3nLlEvin4" },
-          { name: "Close-Grip Bench Press", sets: "3 x 8-10", rest: "60s", videoId: "nEF0bv2FW94" }
+          { name: "Dumbbell Chest Flyes", sets: "3 x 10-12", rest: "60s", tiktok: "7213890704060271877" },
+          { name: "T-Bar Row or Meadows Row", sets: "3 x 10-12", rest: "60s", tiktok: "7553302303852334358" },
+          { name: "Arnold Press", sets: "3 x 10-12", rest: "60s", tiktok: "7548963129955192077" },
+          { name: "Hammer Curls", sets: "3 x 10-12", rest: "45s", tiktok: "7607492520343276831" },
+          { name: "Close-Grip Bench Press", sets: "3 x 8-10", rest: "60s", tiktok: "7216489768127974661" }
         ]}
       ]
     },
@@ -91,18 +91,18 @@ const NOVA_DATA = {
       id: "nova-day5", name: "Day 5 — Lower Hypertrophy + Abs", subtitle: "Quads / Glutes / Core", tag: "Lower", tagClass: "tag-legs",
       sections: [
         { label: "Compound", exercises: [
-          { name: "Front Squat or Goblet Squat", sets: "4 x 8-10", rest: "90s", videoId: "m4ytaCJZpl0" },
-          { name: "Bulgarian Split Squats", sets: "3 x 10/leg", rest: "60s", videoId: "2C-uNgKwPLE" }
+          { name: "Front Squat or Goblet Squat", sets: "4 x 8-10", rest: "90s", tiktok: "7543277699406613773" },
+          { name: "Bulgarian Split Squats", sets: "3 x 10/leg", rest: "60s", tiktok: "7486275941866442030" }
         ]},
         { label: "Isolation", exercises: [
-          { name: "Hip Thrust", sets: "3 x 10-12", rest: "60s", videoId: "SEdqd1n0cvg" },
-          { name: "Seated Calf Raises", sets: "4 x 15-20", rest: "45s", videoId: "JbyjNymZOt0" }
+          { name: "Hip Thrust", sets: "3 x 10-12", rest: "60s", tiktok: "7465707690010938666" },
+          { name: "Seated Calf Raises", sets: "4 x 15-20", rest: "45s", tiktok: "7280487540010814753" }
         ]},
         { label: "Core Circuit (3 rounds)", exercises: [
-          { name: "Hanging Leg Raises", sets: "3 x 12-15", rest: "30s", videoId: "hdng3Nm1x_E" },
-          { name: "Cable Woodchoppers", sets: "3 x 12/side", rest: "30s", videoId: "pAplQXk3dkU" },
-          { name: "Ab Wheel Rollouts", sets: "3 x 10-12", rest: "30s", videoId: "M2rwvNhTOu0" },
-          { name: "Dead Bug", sets: "3 x 10/side", rest: "30s", videoId: "4XLEnwUr1d8" }
+          { name: "Hanging Leg Raises", sets: "3 x 12-15", rest: "30s", tiktok: "7569765536100306189" },
+          { name: "Cable Woodchoppers", sets: "3 x 12/side", rest: "30s", tiktok: "7564556097470663950" },
+          { name: "Ab Wheel Rollouts", sets: "3 x 10-12", rest: "30s", tiktok: "7130265379988901126" },
+          { name: "Dead Bug", sets: "3 x 10/side", rest: "30s", tiktok: "7470133017038556434" }
         ]}
       ]
     },
@@ -364,8 +364,10 @@ function renderWorkout(container, data, profile) {
         var checkedCls = isChecked ? ' checked' : '';
         var completedCls = isChecked ? ' completed' : '';
         var videoBtn;
-        if (ex.videoId) {
-          videoBtn = '<button class="btn-video" onclick="FitDuo.openVideo(\'' + ex.videoId + '\')" title="Watch form video">' + PLAY_SVG + '</button>';
+        if (ex.tiktok) {
+          videoBtn = '<button class="btn-video" onclick="FitDuo.openVideo(\'' + ex.tiktok + '\',\'tiktok\')" title="Watch form video">' + PLAY_SVG + '</button>';
+        } else if (ex.videoId) {
+          videoBtn = '<button class="btn-video" onclick="FitDuo.openVideo(\'' + ex.videoId + '\',\'youtube\')" title="Watch form video">' + PLAY_SVG + '</button>';
         } else {
           var searchQuery = encodeURIComponent(ex.name + ' form tutorial');
           videoBtn = '<a class="btn-video" href="https://www.tiktok.com/search?q=' + searchQuery + '" target="_blank" title="Search on TikTok">' + PLAY_SVG + '</a>';
@@ -702,15 +704,25 @@ window.FitDuo = {
     document.getElementById('profileSelector').classList.remove('hidden');
   },
   navigate: navigate,
-  openVideo: function(videoId) {
+  openVideo: function(id, type) {
     var modal = document.getElementById('videoModal');
-    document.getElementById('videoFrame').src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+    var src;
+    if (type === 'tiktok') {
+      src = 'https://www.tiktok.com/embed/v2/' + id;
+      modal.classList.add('tiktok');
+    } else {
+      src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+      modal.classList.remove('tiktok');
+    }
+    document.getElementById('videoFrame').src = src;
     modal.classList.add('active');
   },
   closeVideo: function(event) {
     if (event && event.target !== event.currentTarget) return;
     document.getElementById('videoFrame').src = '';
-    document.getElementById('videoModal').classList.remove('active');
+    var modal = document.getElementById('videoModal');
+    modal.classList.remove('active');
+    modal.classList.remove('tiktok');
   },
   toggleCheck: function(btn, profile, dayId, exIdx, week) {
     var key = 'checks-w' + week + '-' + dayId;

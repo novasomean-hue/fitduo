@@ -1066,6 +1066,12 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   animation: scaleIn 0.3s ease;
 }
 
+.video-modal.tiktok .video-modal-inner {
+  max-width: 400px;
+  aspect-ratio: 9/16;
+  max-height: 85vh;
+}
+
 .video-modal-inner iframe {
   width: 100%;
   height: 100%;
